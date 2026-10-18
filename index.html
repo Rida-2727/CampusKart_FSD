@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusKart</title>
+  <!-- Tailwind CSS (already added for you) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 text-slate-900">
+
+ <!-- TODO Build It 3: Navigation Bar
+       Add classes to <nav>, <h1> and the <div> of links -->
+  
+  <nav class="flex items-center justify-between bg-blue-950 px-6 py-4 text-white shadow-md">
+    <h1 class="text-xl font-extrabold tracking-tight text-white">CampusKart</h1>
+    <div class="flex items-center gap-5 text-sm font-medium">
+      <a href="#products" class="transition hover:text-amber-300">Shop</a>
+      <a href="#cart" class="transition hover:text-amber-300">Cart (0)</a>
+    </div>
+  </nav>
+
+<!-- TODO Build It 5: Responsive Sale Banner
+       Add classes to <section>, <h2>, <p> and <img>.
+       Remember: text-center on phone, md:text-left and md:justify-between on laptop -->
+  <section class="flex flex-col items-center justify-between gap-8 bg-gradient-to-r from-p-500 to-pink-300 px-6 py-10 text-center text-0 md:flex-row md:px-12 md:py-12 md:text-left">
+    <div class="max-w-xl">
+      <h2 class="text-4xl font-extrabold text-white tracking-tight md:text-5xl">College Sale</h2>
+      <p class="mt-3 text-sm text-indigo-100 md:text-base">Up to 50% off on bags, books and more</p>
+      <!-- TODO Build It 5: style this link like the Add to Cart button,
+           but in amber: bg-amber-400 hover:bg-amber-300 text-indigo-950
+           (add "inline-block mt-6" too) -->
+      
+      <a href="#products" class="mt-6 inline-block rounded-md bg-amber-400 px-5 py-2.5 text-sm font-bold text-indigo-950 shadow transition hover:bg-amber-300">Shop Now</a>
+    </div>
+    <img src="C:\Users\hp\Documents\EXP-5_CampusKart_FSD1\50.jpg" alt="Sale" class="h-36 w-36 rounded-xl object-cover shadow-lg md:h-44 md:w-44 animate-bounce hover:animate-none
+         transition-transform duration-300 hover:scale-110">
+  </section>
+
+<!-- GIVEN: Why Shop With Us (already styled, nothing to do) -->
+  <section class="grid grid-cols-3 gap-4 text-center px-6 py-8 ">
+    <div class="rounded-lg bg-white p-4 shadow-sm">
+      <p class="text-2xl font-bold text-blue-950">Free</p>
+      <p class="text-slate-500">Delivery</p>
+    </div>
+    <div class=" bg-white p-4 rounded-lg shadow-sm">
+      <p class="text-2xl font-bold text-blue-950">7-Day</p>
+      <p class="text-slate-500">Returns</p>
+    </div>
+    <div class=" bg-white p-4 rounded-lg shadow-sm">
+      <p class="text-2xl font-bold text-blue-950">COD</p>
+      <p class="text-slate-500">Available</p>
+    </div>
+  </section>
+
+ <!-- TODO Build It 4: Responsive Product Grid
+       Add classes to this <section> -->
+  <section id="products" class="grid grid-cols-1 gap-4 px-6 pb-8 sm:grid-cols-2 lg:grid-cols-4">
+    <!-- TODO Build It 1 + 2: Product Card
+         Style this FIRST card: <div>, <img>, <h3>, <p>, <span>, <button>.
+         Then copy the same classes to the other 3 cards. -->
+    
+    
+    <div class="rounded-xl border border-indigo-100 bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+      <img src="C:\Users\hp\Documents\EXP-5_CampusKart_FSD1\bags.jpg" alt="Backpack" class="h-36 w-full rounded-lg object-contain">
+      <h3 class="mt-3 text-sm font-bold text-slate-900">Backpack</h3>
+      <p class="mt-1 text-sm font-semibold">Rs. 799 <span class="ml-1 text-xs font-normal text-slate-400 line-through">1299</span></p>
+      <button type="button" class="mt-3 w-full rounded-md bg-blue-950 px-3 py-2 text-xs font-bold text-white transition hover:bg-indigo-700">Add to Cart</button>
+    </div>
+
+    <div class="rounded-xl border border-indigo-100 bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+      <img src="C:\Users\hp\Documents\EXP-5_CampusKart_FSD1\notebook.jpg" alt="Notebooks" class="h-36 w-full rounded-lg object-contain">
+      <h3 class="mt-3 text-sm font-bold text-slate-900">Notebook Set</h3>
+      
+      <p class="mt-1 text-sm font-semibold">Rs.249 <span class="ml-1 text-xs font-normal text-slate-400 line-through">300</span></p>
+      <p>Set of 3 books</p>
+      <button type="button" class="mt-3 w-full rounded-md bg-blue-950 px-3 py-2 text-xs font-bold text-white transition hover:bg-indigo-700">Add to Cart</button>
+    </div>
+
+    <div class="rounded-xl border border-indigo-100 bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+      <img src="C:\Users\hp\Documents\EXP-5_CampusKart_FSD1\bottle.jpg" alt="Water Bottle" class="h-36 w-full rounded-lg object-contain">
+      <h3 class="mt-3 text-sm font-bold text-slate-900">Water Bottle</h3>
+      <p class="mt-1 text-sm font-semibold">Rs. 349 <span class="ml-1 text-xs font-normal text-slate-400 line-through">499</span></p>
+      <button type="button" class="mt-3 w-full rounded-md bg-blue-950 px-3 py-2 text-xs font-bold text-white transition hover:bg-indigo-700">Add to Cart</button>
+    </div>
+
+    <div class="rounded-xl border border-indigo-100 bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+      <img src="C:\Users\hp\Documents\EXP-5_CampusKart_FSD1\earphones.jpg" alt="Earphones" class="h-36 w-full rounded-lg object-contain">
+      <h3 class="mt-3 text-sm font-bold text-slate-900">Earphones</h3>
+      <p class="mt-1 text-sm font-semibold">Rs. 899 <span class="ml-1 text-xs font-normal text-slate-400 line-through">1299</span></p>
+      <button type="button" class="mt-3 w-full rounded-md bg-blue-950 px-3 py-2 text-xs font-bold text-white transition hover:bg-indigo-700">Add to Cart</button>
+    </div>
+
+    <div class="rounded-xl border border-indigo-100 bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+      <img src="C:\Users\hp\Documents\EXP-5_CampusKart_FSD1\lunchbox.jpg" alt="Lunch Box" class="h-36 w-full rounded-lg object-contain">
+      <h3 class="mt-3 text-sm font-bold text-slate-900">Lunch Box</h3>
+      <p class="mt-1 text-sm font-semibold">Rs. 349 <span class="ml-1 text-xs font-normal text-slate-400 line-through">599</span></p>
+      <button type="button" class="mt-3 w-full rounded-md bg-blue-950 px-3 py-2 text-xs font-bold text-white transition hover:bg-indigo-700">Add to Cart</button>
+    </div>
+
+    <div class="rounded-xl border border-indigo-100 bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+      <img src="C:\Users\hp\Documents\EXP-5_CampusKart_FSD1\laptop card.jpg" alt="Laptop" class="h-36 w-full rounded-lg object-contain">
+      <h3 class="mt-3 text-sm font-bold text-slate-900">Laptop</h3>
+      <p class="mt-1 text-sm font-semibold">Rs.85000 </p>
+      <button type="button" class="mt-3 w-full rounded-md bg-blue-950 px-3 py-2 text-xs font-bold text-white transition hover:bg-indigo-700">Add to Cart</button>
+    </div>
+
+    <div class="rounded-xl border border-indigo-100 bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+      <img src="C:\Users\hp\Documents\EXP-5_CampusKart_FSD1\lamp.jpg" alt="Study Lamp" class="h-36 w-full rounded-lg object-contain">
+      <h3 class="mt-3 text-sm font-bold text-slate-900">Study Lamp</h3>
+      <p class="mt-1 text-sm font-semibold">Rs.600 </p>
+      <button type="button" class="mt-3 w-full rounded-md bg-blue-950 px-3 py-2 text-xs font-bold text-white transition hover:bg-indigo-700">Add to Cart</button>
+    </div>
+
+    <div class="rounded-xl border border-indigo-100 bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+      <img src="C:\Users\hp\Documents\EXP-5_CampusKart_FSD1\shoes.jpg" alt="Shoes" class="h-36 w-full rounded-lg object-contain">
+      <h3 class="mt-3 text-sm font-bold text-slate-900">Shoes</h3>
+      <p class="mt-1 text-sm font-semibold">Rs.1000 <span class="ml-1 text-xs font-normal text-slate-400 line-through">1500</span></p>
+      <button type="button" class="mt-3 w-full rounded-md bg-blue-950 px-3 py-2 text-xs font-bold text-white transition hover:bg-indigo-700">Add to Cart</button>
+    </div>
+  </section>
+
+<!-- GIVEN: Footer (already styled, nothing to do) -->
+  <footer class="bg-gray-950 text-pink-300 py-6 text-center ">
+    <p>&copy; 2026 CampusKart</p>
+    <div class=" flex justify-center gap-6 mt-2">
+      <a href="#" class="transition hover:text-amber-400">About</a>
+      <a href="#" class="transition hover:text-amber-400">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
